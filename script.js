@@ -64,4 +64,19 @@ function game() {
     anima=requestAnimationFrame(game)
 }
 
+    
+
+function gira(){
+    var obj=document.getElementById("quad")
+    let ang=0
+    let animaca
+    obj.style.transform="rotate("+ang+"deg)"
+    ang++
+    if(ang>360){
+        ang=0
+    }
+    animaca=requestAnimationFrame(gira)
+}
+gira()
+
 window.addEventListener('load', inicia)
